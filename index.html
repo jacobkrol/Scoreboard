@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Scoreboard</title>
+    <script type="text/javascript" src="data/js-main.js"></script>
+    <script type="text/javascript" src="data/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="data/styles.css" />
+    <link rel="shortcut icon" href="data/icon.png" />
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Scorekeeper!</h1>
+    </div>
+
+    <div class="hl"></div>
+
+    <div id="scorebox">
+        <table id="canvas">
+            <!-- SCORE/PLAYER INFO -->
+        </table>
+    </div>
+
+    <div id="admin">
+        <input type="text" id="nameinput" placeholder="player name..." />
+        <button id="add">ADD PLAYER</button>
+        <div class="hl" style="margin: 10px auto"></div>
+        <button id="undo">UNDO</button>
+        <button id="reset">RESET ALL SCORES</button>
+        <button id="delete">DELETE ALL PLAYERS</button>
+    </div>
+
+    <div id="popup-parent">
+        <div id="popup-back" class="popup"></div>
+        <div id="popup-container" class="popup">
+            <div id="popup-inner">
+                <h2>Player Update</h2>
+                <fieldset>
+                    <legend>Score:</legend>
+                    <input type="text" id="p-add-input" placeholder="0" />
+                    <button id="p-add">ADD</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Rename:</legend>
+                    <input type="text" id="p-name-input" placeholder="..." />
+                    <button id="p-submit">SUBMIT</button>
+                </fieldset>
+                <div style="text-align:right">
+                    <button id="p-delete">DELETE PLAYER</button>
+                    <button id="p-cancel">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

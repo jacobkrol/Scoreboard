@@ -1,0 +1,150 @@
+
+body {
+    margin: 0;
+    background: #DDD;
+    font-family: Trebuchet MS, Arial, sans-serif;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    line-height: 1;
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+.hl {
+    height: 0;
+    border: 1px solid #333;
+    width: 60%;
+    margin: auto;
+}
+
+#admin {
+    text-align: center;
+}
+
+#admin button, #popup-inner button {
+    padding: 10px;
+    background: #55B;
+    color: white;
+    margin: 5px 10px;
+    border-color: #555;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0 4px 4px 0;
+}
+
+#admin button:active, #popup-inner button:active {
+    background: #228;
+    transform: translate(3px, 3px);
+    border-width: 0 1px 1px 0;
+    border-color: #333;
+    margin-left: 13px;
+    margin-bottom: 8px;
+}
+
+#undo {
+    background: #5AA !important;
+}
+
+#undo:active {
+    background: #277 !important;
+}
+
+button:focus, input:focus {
+    outline: none;
+}
+
+#admin input, #popup-inner input {
+    height: 25px;
+    font-family: Trebuchet MS, Arial, sans-serif;
+    padding-left: 5px;
+    line-height: 0;
+    font-size: 11pt;
+}
+
+
+#scorebox {
+    padding: 25px 0 50px 0;
+    text-align: center;
+}
+
+#canvas {
+    border-collapse: collapse;
+    display: inline-block;
+}
+
+#canvas td {
+    height: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 22pt;
+    text-align: center;
+}
+
+#canvas tr:not(:last-child) {
+    border-bottom: 1px solid #55B;
+}
+
+#canvas button {
+    border: none;
+    background: none;
+    color: #333;
+    font-family: Trebuchet MS, Arial, sans-serif;
+    font-size: 22pt;
+    margin: auto;
+    display: flex;
+}
+
+#canvas button:hover {
+    text-decoration: underline;
+}
+
+#canvas img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#popup-back {
+    z-index: 4;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    padding: auto;
+    margin: 0;
+    top: 0;
+    position: absolute;
+    background: #555;
+}
+
+#popup-container {
+    text-align: center;
+}
+
+#popup-inner {
+    z-index: 8;
+    border: 2px solid #333;
+    color: #333;
+    background: #DDD;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    display: inline-block;
+    padding: 25px;
+    text-align: left;
+}
+
+#popup-inner h2 {
+    text-align: center !important;
+    line-height: 1;
+    margin: 0;
+}
+
+fieldset {
+    margin: 25px;
+}
+
+#popup-parent {
+    visibility: hidden;
+}
